@@ -4,6 +4,7 @@ This is a discord code grabber for sniping streamer Sebastian Eli Horse "Forsen"
 
 When you first launch the script the settings file will be generated. You have to edit this file in order to make it work. Everything should be explained inside.
 
+Remember that selfbotting is against discord TOS and could get you banned. I don't recommend selfbotting. If you get banned, it's not my fault.
 
 You also need TamperMonkey addon for browser to be able to join lobbies, the script will automatically press "Join".
 
