@@ -11,10 +11,11 @@ You also need TamperMonkey addon for browser to be able to join lobbies, the scr
 // ==UserScript==
 // @name         Jackbox_Play_Automation
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Clicks the jackbox join button
 // @author       HardeQ
 // @match        https://jackbox.tv/
+// @match        https://playwtd.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=jackbox.tv
 // @grant        none
 // ==/UserScript==
@@ -25,9 +26,20 @@ You also need TamperMonkey addon for browser to be able to join lobbies, the scr
         if (location.href=="https://jackbox.tv/"){
              function jack_click(){
                  document.getElementById("button-join").click();
-                 setTimeout(function() {jack_click()}, 200);
+                 setTimeout(function(){jack_click()}, 200);
              }
             jack_click();
+        }
+        else if (location.href=="https://playwtd.com/"){
+            document.getElementById("room").value = "";
+            function wtd_click(){
+                if(document.getElementById('room').value.length == 4){
+                    document.getElementsByClassName("btn")[0].click();
+                    document.getElementById("room").value = "";
+                }
+                setTimeout(function(){wtd_click()}, 200);
+            }
+            wtd_click();
         }
 
     }, false);
