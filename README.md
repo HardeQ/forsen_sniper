@@ -2,7 +2,7 @@
 
 This is a discord code grabber for sniping streamer Sebastian Eli Horse "Forsen" in games like jackbox or wtd where the code is always 4 letters. 
 
-When you first launch the script the data file will be generated. You have to edit this file in order to make it work. Everything should be explained inside.
+When you first launch the script the settings file will be generated. You have to edit this file in order to make it work. Everything should be explained inside.
 
 
 You also need TamperMonkey addon for browser to be able to join lobbies, the script will automatically press "Join".
