@@ -8,6 +8,8 @@ Remember that selfbotting is against discord TOS and could get you banned. I don
 
 You also need TamperMonkey addon for browser to be able to join lobbies, the script will automatically press "Join".
 
+You also need to install Discord.py version 1.7.3, not the latest one.
+
 ```javascript
 // ==UserScript==
 // @name         Jackbox_Play_Automation
