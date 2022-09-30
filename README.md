@@ -10,6 +10,8 @@ You also need TamperMonkey addon for browser to be able to join lobbies, the scr
 
 You also need to install Discord.py version 1.7.3, not the latest one.
 
+In the second method, if it misses some codes, but all the codes are shown in the script window, it might be because your pc is not fast enough in swapping windows. I recommend then changing the delay in the script in the "enter_code" function in the "time.sleep(0.1)" line to something like 0.15 or 0.2.
+
 ```javascript
 // ==UserScript==
 // @name         Jackbox_Play_Automation
