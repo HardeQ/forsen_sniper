@@ -10,6 +10,17 @@ You also need TamperMonkey addon for browser to be able to join lobbies, the scr
 
 You also need to install Discord.py version 1.7.3, not the latest one.
 
+You need to also install pyautogui, requests, json, _thread.
+
+```python
+
+pip install pyautogui
+pip install requests
+pip install json
+pip install _thread
+
+```
+
 
 ```javascript
 // ==UserScript==
