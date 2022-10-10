@@ -15,7 +15,7 @@ You also need to install Discord.py version 1.7.3, not the latest one.
 // ==UserScript==
 // @name         Jackbox_Play_Automation
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Clicks the jackbox join button
 // @author       HardeQ
 // @match        https://jackbox.tv/
@@ -29,7 +29,11 @@ You also need to install Discord.py version 1.7.3, not the latest one.
     window.addEventListener('load', function() {
         if (location.href=="https://jackbox.tv/"){
              function jack_click(){
-                 document.getElementById("button-join").click();
+
+                 if(document.getElementById("button-join") != null && !document.getElementById("button-join").disabled){
+                     console.log("ZULUL NO CRASHES MUGAAAA POGGERS");
+                     document.getElementById("button-join").click();
+                 }
                  setTimeout(function(){jack_click()}, 200);
              }
             jack_click();
