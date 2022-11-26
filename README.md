@@ -31,7 +31,7 @@ pip install _thread
 // @author       HardeQ
 // @match        https://jackbox.tv/
 // @match        https://playwtd.com/
-// @match        https://wordsgame.lol/*
+// @match        https://wordsgame.lol/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=jackbox.tv
 // @grant        none
 // ==/UserScript==
