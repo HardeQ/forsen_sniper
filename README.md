@@ -12,6 +12,9 @@ You also need to install Discord.py version 1.7.3, not the latest one.
 
 You need to also install pyautogui, requests, json, _thread.
 
+
+<h1>CHANGE YOUR NICKNAME IN THE SCRIPT BELOW IF YOU USE IT FOR "USE YOUR WORDS" GAME!</h1>
+
 ```python
 
 pip install pyautogui
@@ -78,7 +81,7 @@ pip install _thread
                     else if(document.getElementById('name')){
                         setTimeout(
                             function(){
-                                       document.getElementById('name').value = "NAME1"; //EDIT THIS OR YOURE PEPEJA
+                                       document.getElementById('name').value = "NAME1"; //EDIT THE "NAME1" TO YOUR NICKNAME OR YOURE PEPEJA
                                 document.getElementById('join').disabled = false;
                                        document.getElementById('join').click();
                                              }, 100);
