@@ -31,12 +31,17 @@ pip install _thread
 // @author       HardeQ
 // @match        https://jackbox.tv/
 // @match        https://playwtd.com/
+// @match        https://wordsgame.lol/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=jackbox.tv
 // @grant        none
 // ==/UserScript==
 
 
 (function (){
+    function delay(time) {
+        return new Promise(resolve => setTimeout(resolve, time));
+    }
+    this.alert=function() {};
     window.addEventListener('load', function() {
         if (location.href=="https://jackbox.tv/"){
              function jack_click(){
@@ -59,6 +64,28 @@ pip install _thread
                 setTimeout(function(){wtd_click()}, 200);
             }
             wtd_click();
+        }
+        else if (location.href=="https://wordsgame.lol/" || location.href=="https://wordsgame.lol/index.html"){
+                function uyw_click(){
+
+                    if(document.getElementById('roomcode') && document.getElementById('roomcode').value.length == 4){
+                        setTimeout(function(){
+                            document.getElementById("connect").click();
+                            document.getElementById("roomcode").value = "";
+                                                         }, 200);
+
+                    }
+                    else if(document.getElementById('name')){
+                        setTimeout(
+                            function(){
+                                       document.getElementById('name').value = "NAME1"; //EDIT THIS OR YOURE PEPEJA
+                                document.getElementById('join').disabled = false;
+                                       document.getElementById('join').click();
+                                             }, 100);
+                    }
+               setTimeout(function(){uyw_click()}, 200);
+             }
+            delay(200).then(() => uyw_click());
         }
 
     }, false);
