@@ -26,7 +26,7 @@ pip install _thread
 // ==UserScript==
 // @name         Jackbox_Play_Automation
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Clicks the jackbox join button
 // @author       HardeQ
 // @match        https://jackbox.tv/
